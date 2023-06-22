@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+html {
+    /*cria aquela efeito que desliza*/
+    scroll-behavior:smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #ff8c91;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    
+    background-color: #ec5c8d;
+}
+
+body
+
+.banner h1::selection {
+    background-color: #ec5c8d;
+    pointer-events: none;
+}
+
+.container {
+
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+header ul {
+    list-style-type: none;
+    
+}
+
+.logo {
+    width: 100px;
+    
+    
+}
+
+.logo::selection {
+    background-color: #ec5c8d ;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+header ul li:hover {
+
+    transition: .5s;
+    transform: scale(1.1);
+    background-color: #a0346e;
+    padding:5px;
+    
+}
+
+header ul li a {
+    color:#ffc4a6;
+    text-decoration: none;
+}
+
+header ul li a::selection{
+    background-color: #ec5c8d ;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color:#a0346e;
+    color:#ffc4a6;
+    cursor: pointer;
+    transition: .2s;
+    font-size:20px;
+}
+
+.btn-contato button:hover {
+
+    transition: 0.5s;
+    background-color: #6d165a;
+    font-size:23px ;
+}
+
+.btn-contato button::selection{
+    background-color: #ec5c8d ;
+
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(../imagens/imagem_fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 4em;
+    color:#ffc4a6;
+}
+
+
+
+.conteudo {
+    padding: 20%;
+    background-color: #ff8c91;
+}
+
+.conteudo p::selection {
+    background-color: #ec5c8d;
+}
+
+br::selection{
+    
+    background-color: #ec5c8d; 
+}
+
+
+#produtos {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-brownies h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    gap: 200px;
+    
+}
+
+
+.brownies {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.brownies span {
+    margin-top:20px;
+    font-size: 25px;
+}
+
+.produto-brownie {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px #ff8c91; 
+    cursor: pointer;
+    
+}
+
+.produto-brownie:hover {
+    transform: scale(1.1);
+    box-shadow: -2px 5px 20px #ff8c91; 
+}
+
+
+
+@media (max-width:575px)  {
+    header ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+    
+    .btn-contato button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .banner h1 {
+        font-size: 3em;
+        color:#ffc4a6;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:20px;
+        display: flex;
+        
+        
+    }
+
+    .produto-brownie {
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: -2px 3px 10px #ff8c91; 
+        cursor: pointer;
+        
+    }
+
+    
+}
+
+
+
+
+.color1 {color: #6d165a };
+.color2 {color: #a0346e };
+.color3 {color: #ec5c8d };
+.color4 {color: #ff8c91 };
+.color5 {color: #ffc4a6 };

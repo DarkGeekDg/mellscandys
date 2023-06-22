@@ -162,7 +162,7 @@ br::selection{
 
 #produtos {
     display: flex;
-    align-items: center;
+    margin-top: 10px;
     
     justify-content: center;
     height: 100vh;
@@ -170,7 +170,7 @@ br::selection{
 
 .container-brownies h1 {
     text-align: center;
-    
+    padding: 10px;
     
 }
 
@@ -261,13 +261,13 @@ br::selection{
         
     }
 
-    .container-brownies h1 {
-        
-        margin-top:50%;
+    #produtos {
+        height: 100vh;
     }
 
-    
+
 }
+
 
 
 

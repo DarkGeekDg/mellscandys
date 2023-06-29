@@ -263,7 +263,7 @@ footer h1 {
     }
 
     .logo {
-        width: 50px;
+        display: none;
     }
     
     .btn-contato button {
